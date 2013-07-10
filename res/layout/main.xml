@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="true" android:background="@drawable/main_background">
+    
+    <View android:layout_weight="0.2" android:layout_height="fill_parent" android:layout_width="0dp" />
+    
+    <LinearLayout android:layout_weight="0.6" android:layout_height="fill_parent" android:layout_width="0dp" android:orientation="vertical">
+    	
+    	<ImageView android:layout_weight="0.4"
+    		android:layout_height="0dp" android:layout_width="fill_parent" android:src="@drawable/logo"/>
+    		
+    	<View android:layout_weight="0.1" android:layout_height="0dp" android:layout_width="fill_parent" />
+    	
+	    <ImageButton android:layout_weight="0.2"
+	        android:id="@+id/play_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/main_play" android:layout_gravity="center" android:scaleType="fitXY"/>
+	        
+    	<View android:layout_weight="0.05" android:layout_height="0dp" android:layout_width="fill_parent" />
+    	
+	    <ImageButton android:layout_weight="0.2"
+	        android:id="@+id/highscore_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/main_highscore" android:scaleType="fitXY" android:layout_gravity="center">
+    	</ImageButton>
+    	
+    	<View android:layout_weight="0.05" android:layout_height="0dp" android:layout_width="fill_parent" />
+    	
+	    <ImageButton android:layout_weight="0.2"
+	        android:id="@+id/settings_btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/main_settings" android:scaleType="fitXY" android:layout_gravity="center">
+    	</ImageButton>
+    	
+    	<View android:layout_weight="0.2" android:layout_height="0dp" android:layout_width="fill_parent" />
+
+    </LinearLayout>
+    
+    <View android:layout_weight="0.2" android:layout_height="fill_parent" android:layout_width="0dp" />
+</LinearLayout>
