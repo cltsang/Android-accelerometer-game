@@ -8,7 +8,7 @@ import android.widget.ImageButton;
 
 public class MainActivity extends MyActivity {
 
-	ImageButton playBtn, highscoreBtn, settingsBtn;
+	ImageButton playBtn, highScoreBtn, settingsBtn;
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -25,7 +25,7 @@ public class MainActivity extends MyActivity {
         // set the button actions
 		
 		playBtn = (ImageButton) findViewById(R.id.play_btn);
-		highscoreBtn = (ImageButton) findViewById(R.id.highscore_btn);
+		highScoreBtn = (ImageButton) findViewById(R.id.highscore_btn);
 		settingsBtn = (ImageButton) findViewById(R.id.settings_btn);
 
 		playBtn.setOnClickListener(new View.OnClickListener() {
@@ -36,7 +36,7 @@ public class MainActivity extends MyActivity {
 			}
 		});
 		
-		highscoreBtn.setOnClickListener(new View.OnClickListener() {
+		highScoreBtn.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent i = new Intent(getApplicationContext(), HighScoreActivity.class);
